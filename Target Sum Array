@@ -1,0 +1,33 @@
+class Solution {
+    public int[] twoSum(int[] number, int target) {
+        
+        //Brute Force
+        
+         for(int i=0;i<number.length; i++){
+             for(int j=i+1;j<number.length;j++){
+                 int sum = number[i] + number[j];
+                 if(target == sum){
+                     return new int[]{i+1, j+1};
+                 }                
+             }
+         }
+ -----------------------------------------------------------------------------------------------       
+        
+        int left =0;
+        int right =number.length-1;
+        while(left< right){
+            int sum =number[left] + number[right];
+            if(sum == target){
+                return new int[]{left +1 , right +1};
+            }
+            if(sum > target){
+                right --; 
+            }
+                    else {
+                        left++;
+                    }
+            }
+        
+       return null;
+    }
+}
