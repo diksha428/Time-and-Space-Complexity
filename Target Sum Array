@@ -2,7 +2,6 @@ class Solution {
     public int[] twoSum(int[] number, int target) {
         
         //Brute Force
-        
          for(int i=0;i<number.length; i++){
              for(int j=i+1;j<number.length;j++){
                  int sum = number[i] + number[j];
