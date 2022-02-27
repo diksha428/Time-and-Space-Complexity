@@ -4,7 +4,6 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-
   public static int[] mergeTwoSortedArrays(int[] a, int[] b){
     int i=0,j=0,k=0;
     //write your code here
